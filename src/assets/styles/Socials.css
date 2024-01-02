@@ -1,0 +1,17 @@
+#socials {
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+.social {
+    font-size: 1.75em;
+    transition: all 1s ease-in;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+

@@ -1,0 +1,164 @@
+#quote-box, #loading-screen {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2em;
+    padding: 3em;
+    background-color: #00000040;
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    box-shadow: 0px 5px 12px #ffffff40;
+}
+  
+#text {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-top: 1em;
+}
+
+#author {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--text-white);
+    align-self: flex-end;
+}
+
+#line-h {
+    width: 100%;
+    border: 1px solid var(--text-white);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-quote {
+    color: var(--text-white);
+    font-size: 1rem;
+    padding: 0.75em 2em;
+    background: none;
+    border: 1px solid var(--text-white);
+    border-radius: 50px;
+    transition: all 150ms ease-in;
+}
+
+#new-quote:hover {
+    cursor: pointer;
+    background-color: var(--text-white);
+    color: #000000;
+    box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.50);
+}
+
+#links {
+    display: flex;
+    gap: 1em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--text-white);
+    border-radius: 50%;
+    transition: all 150ms ease-in;
+} 
+
+.icon {
+    color: var(--text-white);
+}
+
+.quot:nth-child(1) {
+    margin-right: 0.5em;
+}
+
+.quot:nth-child(2) {
+    margin-left: 0.5em;
+}
+
+.link:hover {
+    cursor: pointer;
+    background-color: var(--text-white);
+    box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.50);
+}
+
+.link:hover > .icon {
+    color: #000000
+}
+
+#copy-text {
+    position: absolute;
+    padding: 1em;
+    left: 50%;
+    color: #000000;
+    bottom: -5em;
+    transform: translateX(-50%);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    transition: opacity 500ms ease-in;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    #quote-box, #loading-screen {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    #quote-box, #loading-screen {
+        width: 90%;
+    }
+}
+
+@media (max-width: 590px) {
+    #quote-box,
+    #loading-screen,
+    #text,
+    #author,
+    #new-quote
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 473px) {
+    #quote-box, #loading-screen {
+        padding: 1.5em 2em;
+        gap: 1em;
+    }
+
+    #quote-box,
+    #loading-screen,
+    #text,
+    #author,
+    #new-quote
+    {
+        font-size: 0.8rem;
+    }
+
+    #navbar {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2em;
+    }
+    
+    #new-quote {
+        margin-top: 1em;
+    }
+
+    .link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon {
+        width: 0.6rem;
+    }
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Monday Feelings';
+    src: url(../fonts/monday-feelings/MondayFeelings-7BD2l.ttf);
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+  
+:root {
+    --text-white: #fcfcfc;
+    --text-display-font: "Monday Feelings", Helvetica, Arial, sans-serif;
+    --text-typeface-font: "Krona One", Helvetica, Arial, sans-serif;
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-typeface-font);
+}
