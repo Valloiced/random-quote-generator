@@ -14,5 +14,9 @@ This personal project is a React-based web application that generates random quo
 - Start the development server: npm start
 - Open your browser and visit http://localhost:3000 to view the app.
 
+## Live Preview
+
+The Live Preview of the project is found [here](https://quote-generator-al.netlify.app/).
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
